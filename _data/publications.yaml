@@ -1,0 +1,23 @@
+- title: "Absynthe: Abstract Interpretation-Guided Synthesis"
+  authors: Sankha Narayan Guria, Jeffrey S. Foster, and David Van Horn
+  venue: PLDI 2023
+  url: https://sankhs.com/static/absynthe-pldi23.pdf
+  year: 2023
+
+- title: "ANOSY: Approximated Knowledge Synthesis with Refinement Types for Declassification"
+  authors: Sankha Narayan Guria, Niki Vazou, Marco Guarnieri, and James Parker
+  venue: PLDI 2022
+  url: https://sankhs.com/static/anosy-pldi22.pdf
+  year: 2022
+
+- title: "RbSyn: Type- and Effect-Guided Program Synthesis"
+  authors: Sankha Narayan Guria, Jeffrey S. Foster, and David Van Horn
+  venue: PLDI 2021
+  url: https://sankhs.com/static/rbsyn-pldi21.pdf
+  year: 2021
+
+- title: "Type-Level Computations for Ruby Libraries"
+  authors: Milod Kazerounian, Sankha Narayan Guria, Niki Vazou, Jeffrey S. Foster, and David Van Horn
+  venue: PLDI 2019
+  url: https://sankhs.com/static/comptypes-pldi19.pdf
+  year: 2019

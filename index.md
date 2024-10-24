@@ -93,3 +93,12 @@ layout: default
 </div>
 
 ## Publications
+
+{% assign pubs = site.data.publications | sort: "year" %}
+{% for pub in pubs reversed %}
+
+**[{{pub.title}}]({{pub.url}})**<br/>
+{{pub.authors}}<br/>
+_{{pub.venue}}_
+
+{% endfor %}
