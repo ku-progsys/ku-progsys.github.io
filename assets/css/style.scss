@@ -728,7 +728,7 @@ pre {
   width: 10em;
   height: 10em;
   object-fit: cover;
-  margin-right: 1em;
+  margin-bottom: 0.5em;
   border-radius: 50%;
 }
 
@@ -785,7 +785,7 @@ pre {
 }
 
 .since {
-  margin-bottom: calc($spacing-unit / 2);
+  margin-bottom: 0.1em;
   color: #666;
   font-variant: small-caps;
   font-size: 0.9rem;
