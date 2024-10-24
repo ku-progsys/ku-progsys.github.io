@@ -68,7 +68,7 @@ layout: default
 <div class="person" id="{{person.relative_path}}">
   <img class="pp" src="{{ person.picture | prepend: site.baseurl }}">
   <h4 class="no-bottom">{{person.name}}</h4>
-  <div class="since">Faculty<br/>
+  <div class="since">Student<br/>
   <!-- {{person.started}} - Present -->
   </div>
 
