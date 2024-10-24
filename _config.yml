@@ -9,7 +9,7 @@
 title: KU Programming Systems Group
 email: sankha@ku.edu
 description: Programming Systems Group @ University of Kansas
-baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ku-progsys.github.io" # the base hostname & protocol for your
 # site
 # twitter_username: tbd
