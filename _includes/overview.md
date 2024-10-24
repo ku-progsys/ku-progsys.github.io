@@ -1,1 +1,3 @@
-Coming soon!
+The Programming Systems Group at the University of Kansas is dedicated to advancing the field of programming languages with the goal of empowering programmers to build reliable, efficient, and maintainable software systems with ease. We use programming language abstractions to design languages, type systems, program analysis, and synthesis techniques to design practical tools towards this goal.
+
+> I am looking for students to join our group. See here for some reasons why our group and KU might be a great fit. Please [send me an email](mailto:sankha@ku.edu) and apply to the graduate program in EECS if you want to join us.

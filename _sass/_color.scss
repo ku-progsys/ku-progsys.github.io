@@ -82,8 +82,11 @@ body.light {
   }
 
   blockquote {
-    color: $l-grey-color;
-    border-left-color: $l-grey-color-light;
+    color: $l-text-color;
+    border-left-color: $l-link-color;
+    background-color: $l-code;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
 
   /**
