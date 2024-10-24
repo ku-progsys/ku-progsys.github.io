@@ -1,0 +1,207 @@
+---
+layout: page
+title : People
+permalink: /people/
+navbar: true
+published: false
+---
+
+<h3>Quick Links</h3>
+<hr>
+
+
+{% assign directors = site.people | where: "type", "director" | sort: "last_name" %}
+{% assign faculties = site.people | where: "type", "faculty" | sort: "last_name" %}
+{% assign postdocs = site.people | where: "type", "postdoc" | sort: "last_name" %}
+{% assign students = site.people | where: "type", "student" | sort: "last_name" %}
+
+{% assign all = directors | concat: faculties | concat: postdocs | concat: students %}
+{% assign remn = all.size | modulo: 3 %}
+
+<h4 class="no-bottom">Current Members</h4>
+<ul class="list-index-3">
+  {% for person in directors %}
+    <li><a href="#{{person.relative_path}}">{{person.name}}</a></li>
+  {% endfor %}
+
+  {% for person in faculties %}
+    <li><a href="#{{person.relative_path}}">{{person.name}}</a></li>
+  {% endfor %}
+
+  {% for person in postdocs %}
+    <li><a href="#{{person.relative_path}}">{{person.name}}</a></li>
+  {% endfor %}
+
+  {% for person in students %}
+    <li><a href="#{{person.relative_path}}">{{person.name}}</a></li>
+  {% endfor %}
+
+  {% if remn == 2 %}
+    <li></li>
+  {% endif %}
+</ul>
+
+{% assign alumni = site.people | where: "type", "alumni" | sort: "last_name" %}
+{% if alumni.size != 0 %}
+<h4 class="no-bottom">Alumni</h4>
+<ul class="list-index-3">
+  {% for person in alumni %}
+    <li><a href="#{{person.relative_path}}">{{person.name}}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% assign directors = site.people | where: "type", "director" | sort: "last_name" %}
+{% assign faculties = site.people | where: "type", "faculty" | sort: "last_name" %}
+{% assign postdocs = site.people | where: "type", "postdoc" | sort: "last_name" %}
+{% assign students = site.people | where: "type", "student" | sort: "last_name" %}
+
+<h3>Current Members</h3>
+<hr>
+
+<div class="people">
+{% for person in directors %}
+
+<div class="person" id="{{person.relative_path}}">
+  <img class="pp" src="{{ person.picture | prepend: site.baseurl }}">
+  <h4 class="no-bottom">{{person.name}}</h4>
+  <div class="since">Faculty<br/>
+  {{person.started}} - Present</div>
+
+  {{person.content | markdownify}}
+
+  <div class="social">
+  {% if person.webpage %}
+  <a href="{{person.webpage}}" target="_blank"><i class="icon fa fa-globe"></i>Web</a><br>
+  {% endif %}
+
+  {% if person.email %}
+  <a href="mailto:{{person.email}}"><i class="icon fa fa-envelope"></i>{{person.email}}</a><br>
+  {% endif %}
+
+  {% if person.twitter %}
+  <a href="https://twitter.com/{{person.twitter}}" target="_blank"><i class="icon fa fa-twitter"></i>@{{person.twitter}}</a><br>
+  {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+{% for person in faculties %}
+
+<div class="person" id="{{person.relative_path}}">
+  <img class="pp" src="{{ person.picture | prepend: site.baseurl }}">
+  <h4 class="no-bottom">{{person.name}}</h4>
+  <div class="since">Faculty<br/>
+  {{person.started}} - Present</div>
+
+  {{person.content | markdownify}}
+
+  <div class="social">
+  {% if person.webpage %}
+  <a href="{{person.webpage}}" target="_blank"><i class="icon fa fa-globe"></i>Web</a><br>
+  {% endif %}
+
+  {% if person.email %}
+  <a href="mailto:{{person.email}}"><i class="icon fa fa-envelope"></i>{{person.email}}</a><br>
+  {% endif %}
+
+  {% if person.twitter %}
+  <a href="https://twitter.com/{{person.twitter}}" target="_blank"><i class="icon fa fa-twitter"></i>@{{person.twitter}}</a><br>
+  {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+{% for person in postdocs %}
+
+<div class="person" id="{{person.relative_path}}">
+  <img class="pp" src="{{ person.picture | prepend: site.baseurl }}">
+  <h4 class="no-bottom">{{person.name}}</h4>
+  <div class="since">Postdoc<br/>
+  {{person.started}} - Present</div>
+
+  {{person.content | markdownify}}
+
+  <div class="social">
+  {% if person.webpage %}
+  <a href="{{person.webpage}}" target="_blank"><i class="icon fa fa-globe"></i>Web</a><br>
+  {% endif %}
+
+  {% if person.email %}
+  <a href="mailto:{{person.email}}"><i class="icon fa fa-envelope"></i>{{person.email}}</a><br>
+  {% endif %}
+
+  {% if person.twitter %}
+  <a href="https://twitter.com/{{person.twitter}}" target="_blank"><i class="icon fa fa-twitter"></i>@{{person.twitter}}</a><br>
+  {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+{% for person in students %}
+
+<div class="person" id="{{person.relative_path}}">
+  <img class="pp" src="{{ person.picture | prepend: site.baseurl }}">
+  <h4 class="no-bottom">{{person.name}}</h4>
+  <div class="since">Student<br/>
+  {{person.started}} - Present</div>
+
+  {{person.content | markdownify}}
+
+  <div class="social">
+  {% if person.webpage %}
+  <a href="{{person.webpage}}" target="_blank"><i class="icon fa fa-globe"></i>Web</a><br>
+  {% endif %}
+
+  {% if person.email %}
+  <a href="mailto:{{person.email}}"><i class="icon fa fa-envelope"></i>{{person.email}}</a><br>
+  {% endif %}
+
+  {% if person.twitter %}
+  <a href="https://twitter.com/{{person.twitter}}" target="_blank"><i class="icon fa fa-twitter"></i>@{{person.twitter}}</a><br>
+  {% endif %}
+  </div>
+</div>
+{% endfor %}
+</div>
+
+{% assign alumni = site.people | where: "type", "alumni" | sort: "last_name" %}
+{% if alumni.size != 0 %}
+
+<h3>Alumni</h3>
+<hr>
+
+<p>(This is not a complete list; more as we get time!)
+
+<div class="people">
+{% for person in alumni %}
+
+<div class="person" id="{{person.relative_path}}">
+  <img class="pp" src="{{ person.picture | prepend: site.baseurl }}">
+  {% if person.started %}
+  <h4 class="no-bottom">{{person.name}}</h4>
+  <div class="since">{{person.started}}-{{person.ended}}</div>
+  {% else %}
+  <h4 class="no-bottom">{{person.name}}</h4>
+  <div class="since">Graduated {{person.ended}}</div>
+  {% endif %}
+
+  {{person.content | markdownify}}
+
+  <div class="social">
+  {% if person.webpage %}
+  <a href="{{person.webpage}}" target="_blank"><i class="icon fa fa-globe"></i>Web</a><br>
+  {% endif %}
+
+  {% if person.email %}
+  <a href="mailto:{{person.email}}"><i class="icon fa fa-envelope"></i>{{person.email}}</a><br>
+  {% endif %}
+
+  {% if person.twitter %}
+  <a href="https://twitter.com/{{person.twitter}}" target="_blank"><i class="icon fa fa-twitter"></i>@{{person.twitter}}</a><br>
+  {% endif %}
+  </div>
+</div>
+{% endfor %}
+</div>
+{% endif %}

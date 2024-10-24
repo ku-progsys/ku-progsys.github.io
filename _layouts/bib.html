@@ -1,0 +1,13 @@
+---
+---
+<strong>
+  {% if entry.url %}<a href="{{ entry.url }}">{% endif %}
+    {{ entry.title }}.
+  {% if entry.url %}</a>{% endif %}
+</strong> {{ entry.author_array | normalize_author }}. <em>{% if entry.booktitle %}{{ entry.booktitle }}. {% elsif entry.journal %}{{ entry.journal }}. {% endif %}</em>
+{% if entry.note %}
+{{ entry.note | replace_url }}.
+{% endif %}
+{% if entry.highlight %}
+<span class="label success">{{ entry.highlight }}</span>
+{% endif %}
