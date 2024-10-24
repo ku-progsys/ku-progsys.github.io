@@ -364,8 +364,8 @@ pre {
   padding-left: 2em;
   padding-right: 2em;
   @include media-query($on-palm) {
-    display: none;
-    content: "";
+    padding-left: 0em;
+    padding-right: 0em;
   }
 }
 .site-navigation-br {
@@ -703,18 +703,25 @@ pre {
 .people {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .person {
   display: block;
   margin-bottom: 2em;
-  width: 33%;
+  max-width: 33%;
+  float: left;
   > a {
     font-size: 0.9rem;
   }
   > p {
     padding-right: 1em;
     margin-bottom: 0px;
+  }
+  @include media-query($on-palm) {
+    max-width: 50%;
   }
 }
 .social {
@@ -774,10 +781,16 @@ pre {
   color: #666;
   font-variant: small-caps;
   font-size: 1rem;
+  @include media-query($on-palm) {
+    width: 25%;
+  }
 }
 
 .news-matter {
   margin-left: 15%;
+  @include media-query($on-palm) {
+    margin-left: 25%;
+  }
 }
 
 .no-bottom {
