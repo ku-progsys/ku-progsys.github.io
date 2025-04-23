@@ -712,6 +712,7 @@ pre {
   display: block;
   margin-bottom: 2em;
   max-width: 33%;
+  width: 33%;
   float: left;
   > a {
     font-size: 0.9rem;
@@ -722,6 +723,7 @@ pre {
   }
   @include media-query($on-palm) {
     max-width: 50%;
+    width: 50%;
   }
 }
 .social {
