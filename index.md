@@ -41,15 +41,19 @@ layout: default
 
   <div class="social">
   {% if person.webpage %}
-  <a href="{{person.webpage}}" target="_blank"><i class="icon fa fa-globe"></i>Web</a><br>
+  <a href="{{person.webpage}}" target="_blank"><i class="icon fa-solid fa-globe"></i>Web</a><br>
   {% endif %}
 
   {% if person.email %}
-  <a href="mailto:{{person.email}}"><i class="icon fa fa-envelope"></i>{{person.email}}</a><br>
+  <a href="mailto:{{person.email}}"><i class="icon fa-solid fa-envelope"></i>{{person.email}}</a><br>
   {% endif %}
 
   {% if person.twitter %}
-  <a href="https://twitter.com/{{person.twitter}}" target="_blank"><i class="icon fa fa-twitter"></i>@{{person.twitter}}</a><br>
+  <a href="https://x.com/{{person.twitter}}" target="_blank"><i class="icon fa-brands fa-x-twitter"></i>@{{person.twitter}}</a><br>
+  {% endif %}
+
+  {% if person.bluesky %}
+  <a href="https://bsky.app/profile/{{person.bluesky}})" target="_blank"><i class="icon fa-brands fa-bluesky"></i>@{{person.bluesky}}</a><br>
   {% endif %}
   </div>
 </div>
@@ -69,15 +73,19 @@ layout: default
 
   <div class="social">
   {% if person.webpage %}
-  <a href="{{person.webpage}}" target="_blank"><i class="icon fa fa-globe"></i>Web</a><br>
+  <a href="{{person.webpage}}" target="_blank"><i class="icon fa-solid fa-globe"></i>Web</a><br>
   {% endif %}
 
   {% if person.email %}
-  <a href="mailto:{{person.email}}"><i class="icon fa fa-envelope"></i>{{person.email}}</a><br>
+  <a href="mailto:{{person.email}}"><i class="icon fa-solid fa-envelope"></i>{{person.email}}</a><br>
   {% endif %}
 
   {% if person.twitter %}
-  <a href="https://twitter.com/{{person.twitter}}" target="_blank"><i class="icon fa fa-twitter"></i>@{{person.twitter}}</a><br>
+  <a href="https://x.com/{{person.twitter}}" target="_blank"><i class="icon fa-brands fa-x-twitter"></i>@{{person.twitter}}</a><br>
+  {% endif %}
+
+  {% if person.bluesky %}
+  <a href="https://bsky.app/profile/{{person.bluesky}})" target="_blank"><i class="icon fa-brands fa-bluesky"></i>@{{person.bluesky}}</a><br>
   {% endif %}
   </div>
 </div>
@@ -97,15 +105,19 @@ layout: default
 
   <div class="social">
   {% if person.webpage %}
-  <a href="{{person.webpage}}" target="_blank"><i class="icon fa fa-globe"></i>Web</a><br>
+  <a href="{{person.webpage}}" target="_blank"><i class="icon fa-solid fa-globe"></i>Web</a><br>
   {% endif %}
 
   {% if person.email %}
-  <a href="mailto:{{person.email}}"><i class="icon fa fa-envelope"></i>{{person.email}}</a><br>
+  <a href="mailto:{{person.email}}"><i class="icon fa-solid fa-envelope"></i>{{person.email}}</a><br>
   {% endif %}
 
   {% if person.twitter %}
-  <a href="https://twitter.com/{{person.twitter}}" target="_blank"><i class="icon fa fa-twitter"></i>@{{person.twitter}}</a><br>
+  <a href="https://x.com/{{person.twitter}}" target="_blank"><i class="icon fa-brands fa-x-twitter"></i>@{{person.twitter}}</a><br>
+  {% endif %}
+
+  {% if person.bluesky %}
+  <a href="https://bsky.app/profile/{{person.bluesky}})" target="_blank"><i class="icon fa-brands fa-bluesky"></i>@{{person.bluesky}}</a><br>
   {% endif %}
   </div>
 </div>
@@ -125,15 +137,19 @@ layout: default
 
   <div class="social">
   {% if person.webpage %}
-  <a href="{{person.webpage}}" target="_blank"><i class="icon fa fa-globe"></i>Web</a><br>
+  <a href="{{person.webpage}}" target="_blank"><i class="icon fa-solid fa-globe"></i>Web</a><br>
   {% endif %}
 
   {% if person.email %}
-  <a href="mailto:{{person.email}}"><i class="icon fa fa-envelope"></i>{{person.email}}</a><br>
+  <a href="mailto:{{person.email}}"><i class="icon fa-solid fa-envelope"></i>{{person.email}}</a><br>
   {% endif %}
 
   {% if person.twitter %}
-  <a href="https://twitter.com/{{person.twitter}}" target="_blank"><i class="icon fa fa-twitter"></i>@{{person.twitter}}</a><br>
+  <a href="https://x.com/{{person.twitter}}" target="_blank"><i class="icon fa-brands fa-x-twitter"></i>@{{person.twitter}}</a><br>
+  {% endif %}
+
+  {% if person.bluesky %}
+  <a href="https://bsky.app/profile/{{person.bluesky}})" target="_blank"><i class="icon fa-brands fa-bluesky"></i>@{{person.bluesky}}</a><br>
   {% endif %}
   </div>
 </div>
